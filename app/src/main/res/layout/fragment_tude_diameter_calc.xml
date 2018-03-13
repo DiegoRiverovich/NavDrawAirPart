@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:windowSoftInputMode="adjustResize"
+
+    android:scrollbarStyle="outsideOverlay"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:windowSoftInputMode="adjustResize"
+        >
+
+        <!-- //////////////////////////////////////////////////////////////////////  -->
+
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/top"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/AirPartColor"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:text="Расчет диаметра трубопровода для компрессора"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/cavTV"
+
+            android:layout_below="@+id/top"
+
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:text="Объемный расход сжатого воздуха?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            />
+
+
+        <EditText
+            android:id="@+id/cavmmET"
+
+            android:layout_width="0dp"
+            android:maxWidth="500dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cavTV"
+            android:layout_toLeftOf="@+id/cavB"
+
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_style"
+            android:cursorVisible="true"
+            android:digits="0123456789."
+            android:hint="0"
+            android:lines="1"
+            android:paddingLeft="8dp" />
+
+
+        <ImageButton
+            android:id="@+id/cavB"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:tag="cavB"
+            android:onClick="clearFields"
+
+            android:layout_toLeftOf="@+id/cavmmTV"
+            android:layout_below="@+id/cavTV"
+
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+        <TextView
+            android:id="@+id/cavmmTV"
+
+            android:layout_below="@+id/cavTV"
+            android:layout_toLeftOf="@id/cavmsET"
+
+            android:paddingLeft="8dp"
+            android:text="м³/мин="
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/cavmsET"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/cavTV"
+            android:layout_toLeftOf="@+id/cavmsTV"
+
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:textIsSelectable="true"
+
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_grey_style"
+            android:hint="0"
+            android:lines="1"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/cavmsTV"
+
+            android:layout_below="@+id/cavTV"
+            android:layout_alignParentRight="true"
+
+            android:paddingLeft="8dp"
+            android:text="м³/c"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <!-- //////////////////////////////////////////////////////////////////////  -->
+
+
+
+        <TextView
+            android:id="@+id/tlTV"
+
+            android:layout_below="@+id/cavmmET"
+
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:text="Длина трубопровода с поправками?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            />
+
+
+        <EditText
+            android:id="@+id/tlET"
+
+            android:layout_width="0dp"
+            android:maxWidth="500dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tlTV"
+            android:layout_toLeftOf="@+id/tlB"
+
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_style"
+            android:cursorVisible="true"
+            android:digits="0123456789."
+            android:hint="0"
+            android:lines="1"
+            android:paddingLeft="8dp" />
+
+
+        <ImageButton
+            android:id="@+id/tlB"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:tag="tlB"
+            android:onClick="clearFields"
+
+            android:layout_toLeftOf="@+id/tlmTV"
+            android:layout_below="@+id/tlTV"
+
+
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+        <TextView
+            android:id="@+id/tlmTV"
+
+            android:layout_below="@+id/tlTV"
+            android:layout_alignParentRight="true"
+
+            android:paddingLeft="8dp"
+            android:text=" м"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+        <!-- //////////////////////////////////////////////////////////////////////  -->
+
+
+        <TextView
+            android:id="@+id/pdTV"
+
+            android:layout_below="@+id/tlET"
+
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:text="Допустимое падение давления?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            />
+
+
+        <EditText
+            android:id="@+id/pdET"
+
+            android:layout_width="0dp"
+            android:maxWidth="500dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/pdTV"
+            android:layout_toLeftOf="@+id/pdB"
+
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_style"
+            android:cursorVisible="true"
+            android:digits="0123456789."
+            android:hint="0"
+            android:lines="1"
+            android:paddingLeft="8dp" />
+
+
+        <ImageButton
+            android:id="@+id/pdB"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:tag="pdB"
+            android:onClick="clearFields"
+
+            android:layout_toLeftOf="@+id/pdbTV"
+            android:layout_below="@+id/pdTV"
+
+
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+        <TextView
+            android:id="@+id/pdbTV"
+
+            android:layout_below="@+id/pdTV"
+            android:layout_alignParentRight="true"
+
+            android:paddingLeft="8dp"
+            android:text="бар"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <!-- //////////////////////////////////////////////////////////////////////  -->
+
+
+        <TextView
+            android:id="@+id/sdpTV"
+
+            android:layout_below="@+id/pdET"
+
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:text="Давление выключения (перехода на холостой ход)?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            />
+
+
+        <EditText
+            android:id="@+id/sdpET"
+
+            android:layout_width="0dp"
+            android:maxWidth="500dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sdpTV"
+            android:layout_toLeftOf="@+id/sdpB"
+
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_style"
+            android:cursorVisible="true"
+            android:digits="0123456789."
+            android:hint="0"
+            android:lines="1"
+            android:paddingLeft="8dp" />
+
+
+        <ImageButton
+            android:id="@+id/sdpB"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:tag="sdpB"
+            android:onClick="clearFields"
+
+            android:layout_toLeftOf="@+id/sdpBTV"
+            android:layout_below="@+id/sdpTV"
+
+
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+        <TextView
+            android:id="@+id/sdpBTV"
+
+            android:layout_below="@+id/sdpTV"
+            android:layout_alignParentRight="true"
+
+            android:paddingLeft="8dp"
+            android:text="бар"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+
+
+        <!-- //////////////////////////////////////////////////////////////////////  -->
+
+
+
+        <TextView
+            android:id="@+id/idtTV"
+
+            android:layout_below="@+id/sdpET"
+
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:text="Нужна труба с внутренним диаметром не менее"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            />
+
+
+        <EditText
+            android:id="@+id/idtmET"
+
+            android:layout_width="0dp"
+            android:maxWidth="500dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/idtTV"
+            android:layout_toLeftOf="@+id/idtB"
+
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:textIsSelectable="true"
+
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_grey_style"
+            android:digits="0123456789."
+            android:hint="0"
+            android:lines="1"
+            android:paddingLeft="8dp" />
+
+
+        <ImageButton
+            android:id="@+id/idtB"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:tag="idtB"
+            android:onClick="clearFields"
+
+            android:layout_toLeftOf="@+id/idtmTV"
+            android:layout_below="@+id/idtTV"
+
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+        <TextView
+            android:id="@+id/idtmTV"
+
+            android:layout_below="@+id/idtTV"
+            android:layout_toLeftOf="@id/idtmsET"
+
+            android:paddingLeft="8dp"
+            android:text="м="
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/idtmsET"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/idtTV"
+            android:layout_toLeftOf="@+id/idtmsTV"
+
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:textIsSelectable="true"
+
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_grey_style"
+            android:hint="0"
+            android:lines="1"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/idtmsTV"
+
+            android:layout_below="@+id/idtTV"
+            android:layout_alignParentRight="true"
+
+            android:paddingLeft="8dp"
+            android:text="мм"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</ScrollView>

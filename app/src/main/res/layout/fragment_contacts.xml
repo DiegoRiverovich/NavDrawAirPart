@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragmentContainer"
+        android:padding="10dp"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/AirPartColor"
+            android:layout_gravity="left"
+            android:text="Доставка и оплата товаров"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="left"
+            android:text="Юридический адрес: \nУланский переулок дом № 14, корпус А, помещение 1 \n+7 (495) 120-28-55 (многоканальный) \nВремя работы: \n пон.-пятн. с 9-00 до 18-00. \n info@air-part.ru \nПочтовый адрес для корреспонденции: \n 140000, Московская обл., г. Люберцы, ул. Котельническая, д. 4. \nСклады для самовывоза. \nДля удобства самовывоза товара, офис-склады размещены в Северо-Восточном округе (СВАО) г. Москвы и на Юго-Востоке в МО г. Люберцы,  (схемы проезда предоставят наши менеджеры)."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/AirPartColor"
+            android:layout_gravity="left"
+            android:text="Схема проезда:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <fragment
+            class="com.google.android.gms.maps.SupportMapFragment"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            map:cameraTargetLat="55.768744"
+            map:cameraTargetLng="37.639295"
+            map:cameraTilt="1"
+            map:cameraZoom="18"
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_gravity="center"
+    android:padding="10dp"
+    android:id="@+id/recycleview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+</android.support.v7.widget.RecyclerView>
+
+
+<!--
+<GridView
+    android:paddingBottom="200dip"
+    android:stretchMode="columnWidth"
+    android:id="@+id/griview"
+    android:numColumns="auto_fit"
+    android:gravity="center"
+    android:columnWidth="120dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+</GridView>
+-->
+
+
+    <!--
+    <GridLayout
+        android:layout_gravity="center|top"
+        android:background="@color/testColor"
+        android:orientation="horizontal"
+        android:rowCount="7"
+        android:columnCount="3"
+        android:id="@+id/productLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/helloworld"
+            android:text="Hello werld!!!@#"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_gravity="center"
+            android:text="yo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </GridLayout>
+    -->

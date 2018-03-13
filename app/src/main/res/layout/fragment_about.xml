@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/AirPartColor"
+        android:layout_gravity="left"
+        android:text="О компании"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:text="Динамично развивающаяся компания ООО 'Эир-Парт' в сфере поставки расходных материалов и комплектующих для компрессоров и осушителей, фильтрующих элементов к магистральным фильтрам для производства и очистки сжатого воздуха, а также фильтров к гидравлическим системам и процессной фильтрации. Можно много писать о том, какие работают в нашем коллективе, и какие мы хорошие, но в данном разделе постараемся и ответить на вопросы, которые Вас интересуют, а не как многие компании затертыми фразами."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

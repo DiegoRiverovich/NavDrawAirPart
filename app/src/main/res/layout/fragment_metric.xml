@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbarStyle="outsideOverlay"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:minHeight="2000dp"
+    android:minWidth="2000dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:minWidth="350dp"
+        android:maxWidth="700dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center|top"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/AirPartColor"
+            android:layout_gravity="left"
+            android:text="Метрическая система"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="left"
+            android:text="Метр кубический в секунду (м³/с)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/mks"
+                android:lines="1"
+                android:focusable="true"
+                android:cursorVisible="true"
+
+
+                android:minWidth="240dp"
+                android:maxWidth="500dp"
+
+                android:digits="0123456789."
+                android:background="@drawable/border_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:hint="0"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/mksButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/clear2" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="left"
+            android:text="Метр кубический в минуту (м³/мин)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/mkm"
+                android:lines="1"
+                android:focusable="true"
+                android:cursorVisible="true"
+
+                android:minWidth="240dp"
+                android:maxWidth="500dp"
+
+                android:digits="0123456789."
+                android:background="@drawable/border_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:hint="0"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/mkmButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/clear2" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="left"
+            android:text="Метр кубический в час (м³/ч)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/mkh"
+                android:lines="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="true"
+
+                android:minWidth="240dp"
+                android:maxWidth="500dp"
+
+                android:digits="0123456789."
+                android:background="@drawable/border_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:hint="0"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/mkhButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/clear2" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="left"
+            android:text="Литр в секунду (л/с)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ls"
+                android:lines="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="true"
+
+                android:minWidth="240dp"
+                android:maxWidth="500dp"
+
+                android:digits="0123456789."
+                android:background="@drawable/border_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:hint="0"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/lsButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/clear2" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="left"
+            android:text="Литр в минуту (л/м)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/lm"
+                android:lines="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:cursorVisible="true"
+
+                android:minWidth="240dp"
+                android:maxWidth="500dp"
+
+                android:digits="0123456789."
+                android:background="@drawable/border_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:hint="0"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/lmButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/clear2" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_gravity="left"
+            android:text="Литр в час (л/ч)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/lh"
+            android:lines="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="true"
+
+            android:minWidth="240dp"
+            android:maxWidth="700dp"
+
+
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:hint="0"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/lhButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+    </LinearLayout>
+
+
+
+        <!--<TextView
+
+
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/border_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:hint="0"
+            android:text="" />-->
+
+    </LinearLayout>
+</ScrollView>

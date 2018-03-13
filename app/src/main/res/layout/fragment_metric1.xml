@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:windowSoftInputMode="adjustResize"
+
+    android:scrollbarStyle="outsideOverlay"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:windowSoftInputMode="adjustResize"
+        >
+
+
+
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/top"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/AirPartColor"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:text="Метрическая система"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/mksTV"
+
+            android:layout_below="@+id/top"
+
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:text="Метр кубический в секунду (м³/с)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            />
+
+
+        <EditText
+            android:id="@+id/mksET"
+
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/mksB"
+            android:layout_below="@+id/mksTV"
+
+            android:lines="1"
+            android:focusable="true"
+            android:cursorVisible="true"
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="0"
+            android:paddingLeft="8dp"
+            />
+
+        <ImageButton
+            android:id="@+id/mksB"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:tag="mksB"
+            android:onClick="clearFields"
+
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mksTV"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+
+
+        <!-- //////////////////////////////////////////////////////////////////////  -->
+
+
+        <TextView
+            android:layout_below="@+id/mksET"
+            android:id="@+id/mkmTV"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:text="Метр кубический в минуту (м?/мин)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+
+
+        <EditText
+            android:id="@+id/mkmET"
+            android:lines="1"
+            android:focusable="true"
+            android:cursorVisible="true"
+
+            android:layout_below="@+id/mkmTV"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/mkmB"
+
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="8dp"/>
+
+        <ImageButton
+            android:layout_below="@+id/mkmTV"
+            android:layout_alignParentRight="true"
+
+            android:id="@+id/mkmB"
+
+            android:tag="mkmB"
+            android:onClick="clearFields"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+
+        <!-- /////////////////////////////////////////////////////////////// -->
+
+
+        <TextView
+            android:layout_below="@+id/mkmET"
+            android:id="@+id/mkhTV"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:text="Метр кубический в час (м?/ч)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+
+
+        <EditText
+            android:id="@+id/mkhET"
+            android:lines="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="true"
+
+            android:layout_below="@+id/mkhTV"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/mkhB"
+
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="8dp"/>
+
+        <ImageButton
+            android:id="@+id/mkhB"
+
+            android:layout_below="@+id/mkhTV"
+            android:layout_alignParentRight="true"
+
+            android:tag="mkhB"
+            android:onClick="clearFields"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+
+
+        <!-- /////////////////////////////////////////////////////////////// -->
+
+
+
+
+        <TextView
+            android:layout_below="@+id/mkhET"
+            android:id="@+id/lsTV"
+            android:padding="5dp"
+            android:text="Литр в секунду (л/с)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+
+        <EditText
+            android:id="@+id/lsET"
+            android:lines="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="true"
+
+            android:layout_below="@+id/lsTV"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/lsB"
+
+
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="8dp"/>
+
+        <ImageButton
+            android:id="@+id/lsB"
+
+            android:layout_below="@+id/lsTV"
+            android:layout_alignParentRight="true"
+
+            android:tag="lsB"
+            android:onClick="clearFields"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+
+        <TextView
+            android:layout_below="@+id/lsET"
+            android:id="@+id/lmTV"
+            android:padding="5dp"
+            android:text="Литр в минуту (л/м)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+
+
+        <EditText
+            android:id="@+id/lmET"
+            android:lines="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="true"
+
+            android:layout_below="@+id/lmTV"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/lsB"
+
+
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="8dp"/>
+
+        <ImageButton
+            android:id="@+id/lmB"
+
+            android:layout_below="@+id/lmTV"
+            android:layout_alignParentRight="true"
+
+            android:tag="lmB"
+            android:onClick="clearFields"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+
+
+        <!-- /////////////////////////////////////////////////////////////// -->
+
+
+        <TextView
+            android:layout_below="@+id/lmET"
+            android:id="@+id/lhTV"
+
+            android:padding="5dp"
+            android:text="Литр в час (л/ч)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+
+        <EditText
+            android:id="@+id/lhET"
+            android:lines="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="true"
+
+            android:layout_below="@+id/lhTV"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/lhB"
+
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="8dp"/>
+
+        <ImageButton
+            android:id="@+id/lhB"
+
+            android:layout_below="@+id/lhTV"
+            android:layout_alignParentRight="true"
+
+            android:tag="lhB"
+            android:onClick="clearFields"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:windowSoftInputMode="adjustResize"
+
+    android:scrollbarStyle="outsideOverlay"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:windowSoftInputMode="adjustResize"
+        >
+
+
+
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/top"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/AirPartColor"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:text="Конвертер единиц давления"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/atmTV"
+
+            android:layout_below="@+id/top"
+
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:text="Атмосферы, атм (atm)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            />
+
+
+        <EditText
+            android:id="@+id/atmET"
+
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/atmB"
+            android:layout_below="@+id/atmTV"
+
+            android:lines="1"
+            android:focusable="true"
+            android:cursorVisible="true"
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="0"
+            android:paddingLeft="8dp"
+            />
+
+        <ImageButton
+            android:id="@+id/atmB"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:tag="atmB"
+            android:onClick="clearFields"
+
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/atmTV"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+
+
+        <!-- //////////////////////////////////////////////////////////////////////  -->
+
+
+        <TextView
+            android:layout_below="@+id/atmET"
+            android:id="@+id/kpaTV"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:text="КилоПаскали, кПа (KPa)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+
+
+        <EditText
+            android:id="@+id/kpaET"
+            android:lines="1"
+            android:focusable="true"
+            android:cursorVisible="true"
+
+            android:layout_below="@+id/kpaTV"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/kpaB"
+
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="8dp"/>
+
+        <ImageButton
+            android:layout_below="@+id/kpaTV"
+            android:layout_alignParentRight="true"
+
+            android:id="@+id/kpaB"
+
+            android:tag="kpaB"
+            android:onClick="clearFields"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+
+        <!-- /////////////////////////////////////////////////////////////// -->
+
+
+        <TextView
+            android:layout_below="@+id/kpaET"
+            android:id="@+id/mpaTV"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:text="МегаПаскалиб, МПа (MPa)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+
+
+        <EditText
+            android:id="@+id/mpaET"
+            android:lines="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="true"
+
+            android:layout_below="@+id/mpaTV"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/mpaB"
+
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="8dp"/>
+
+        <ImageButton
+            android:id="@+id/mpaB"
+
+            android:layout_below="@+id/mpaTV"
+            android:layout_alignParentRight="true"
+
+            android:tag="mpaB"
+            android:onClick="clearFields"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+
+
+        <!-- /////////////////////////////////////////////////////////////// -->
+
+
+
+
+        <TextView
+            android:layout_below="@+id/mpaET"
+            android:id="@+id/psiTV"
+            android:padding="5dp"
+            android:text="Фунты на кв.дюйм, psi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+
+        <EditText
+            android:id="@+id/psiET"
+            android:lines="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="true"
+
+            android:layout_below="@+id/psiTV"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/kgsB"
+
+
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="8dp"/>
+
+        <ImageButton
+            android:id="@+id/psiB"
+
+            android:layout_below="@+id/psiTV"
+            android:layout_alignParentRight="true"
+
+            android:tag="psiB"
+            android:onClick="clearFields"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+
+
+        <!-- /////////////////////////////////////////////////////////////// -->
+
+
+
+
+        <TextView
+            android:layout_below="@+id/psiET"
+            android:id="@+id/kgsTV"
+            android:padding="5dp"
+            android:text="Килограмм-силы на кв. см, кгс/см"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+
+
+        <EditText
+            android:id="@+id/kgsET"
+            android:lines="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="true"
+
+            android:layout_below="@+id/kgsTV"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/kgsB"
+
+
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="8dp"/>
+
+        <ImageButton
+            android:id="@+id/kgsB"
+
+            android:layout_below="@+id/kgsTV"
+            android:layout_alignParentRight="true"
+
+            android:tag="kgsB"
+            android:onClick="clearFields"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+
+
+        <!-- /////////////////////////////////////////////////////////////// -->
+
+
+        <TextView
+            android:layout_below="@+id/kgsET"
+            android:id="@+id/barTV"
+
+            android:padding="5dp"
+            android:text="Бары, (bar)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+
+        <EditText
+            android:id="@+id/barET"
+            android:lines="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="true"
+
+            android:layout_below="@+id/barTV"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/barB"
+
+            android:digits="0123456789."
+            android:background="@drawable/border_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="8dp"/>
+
+        <ImageButton
+            android:id="@+id/barB"
+
+            android:layout_below="@+id/barTV"
+            android:layout_alignParentRight="true"
+
+            android:tag="barB"
+            android:onClick="clearFields"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clear2" />
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
